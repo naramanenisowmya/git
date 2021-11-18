@@ -1,0 +1,39 @@
+slide num:41
+1)mkdir test
+cd test
+2)cat >employeelist
+cat >skillset
+3)mkdir test2
+ln -s skillset slink_skillset
+cat slink_skillset
+rm skillset
+ln skillset hlink_skillset
+--In symbolic file if we delete original file it will delete and does not exist again,but in hard link if we delete file it will be in the linked file.Inode number is same fo both.
+4)chmod g+rw filename
+ls -l
+5)chmod g-w filename
+ls -l
+6)chmod o+w filename
+ls -l
+7)chmod o-w filename
+ls -l
+10)employeelist -wc -l
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
