@@ -1,1 +1,57 @@
+slide:94
+1)O
+2)dd,u
+3)1,$/bc
+4)dw
+5)1,1s/c/C
+6)1,$s/ /t
+7)3yy,p
+8)dd
+9)2u
+10)w "bc_v2"
+
+slide:47
+*cat >file1
+*cat >>file1-add 2 lines
+*cat >file2
+*cat file1 file2
+*mv file1 file2
+*mv file2 file3
+*cat file1 file2 file3 file4 file5,ls -l
+*cp f1 f2 2>errlog
+*cat file1 file2 file3 file4 file5 >file10
+*cp file1 file6 2>errlog
+
+slide:55
+*tail +10 file1 | head -15
+*tail +10 file1 | head -1
+*ls -t | head -3
+*ls -lsr | head -1
+
+
+slide:61
+*grep "[A]" filename
+*grep "^[The]" filename
+*grep ".$" filename
+*grep "^.[abc]" filename
+*grep "de*f" filename
+*grep -E filename
+
+slide:116
+*sort file >outfile& or sleep 200&
+*nohup sort -o >outfilename < &
+*It will run in background
+*sleep 5 | echo "hello"
+*ps -l filename
+
+slide:118
+*at now + 5 minute | echo "hello"
+*at > ls >filename29nov
+*at now + 1 day | echo "happy birthday"
+
+slide:120
+*crontab 5 0 0 0 * echo "hello" >greetings
+*crontab 0 0 29 11 * ls >filename
+*crontab 0 0 12 11 * echo "happy birthday" >greeting
+
 
