@@ -1,0 +1,48 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+<title>To create a task</title> 
+<body>
+<h1>To create a task</h1><br> 
+</head> 
+team member name: <select name="status"><option>
+ <option value=1 >indhu 
+ <option value=2 >haritha 
+ <option value=3 >sowmya 
+ <option value=4 >rupa 
+ </select> 
+ <br> 
+ <br> 
+ Task id: <input type="numbers" number="num" required>
+ <br>
+ <br> 
+ Name: <input type="name" name="text" required> 
+ <br> 
+ <br>
+ Description: <input type="name" name="text" size="40" required> 
+ <br>
+ <br>
+ status: <select name="status" ><option> 
+ <option value=1 >close
+ <option value=2 >impress 
+ <option value=3 >cancelled 
+ <option value=4 >onhold
+ </select><br> <br> <label><b>
+ Priority:</b></label> 
+ <input type="radio" name="high">
+ <label>High</label> <input type="radio" name="medium"> 
+ <label>medium<//label> <input type="radio" name="low">
+ <label>low</label> <br> <br>
+ Notes: <input type="name" name="text" size="40" required> <br> <br>
+ Bookmark: <input type="name" name="text" required> <br> <br>
+ ownerid: <input type="number" name="num" required> <br> <br>
+ createrid: <input type="num" name="num" required> <br> <br>
+ createdon: <input type="date" date="year/month/date" required> <br> <br>
+ modifiedon: <input type="date" date="year/month/date" required> 
+ <br>
+ <br>
+<button>submit</button>
+<br>
+</br>
+</body>
+</html>
