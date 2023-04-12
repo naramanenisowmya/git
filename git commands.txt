@@ -1,0 +1,133 @@
+git is a version control system(VCS),it can be used to develop the code and maintain the versioning
+git hub is a hosting service,which can be used to manage the source code, it will provides the GUI
+
+git flow:to commit files from working area to staging area to local repo to remote repo
+-------------
+git init - gng to create local repositary
+PWD - to see in which directory we r in
+ls -la
+git status - to check the files in which area
+
+git . or git * -  to add all the files from working area to staging area
+git add *py - to add files
+git add fn1 fn2
+vi filename - to editor update the file
+i - to insert
+esc - to come back
+wq - to save
+
+git status - to see the status
+git config --global user.name "sowmya" - for first use only
+git config --global user.email "sowmyanaramaneni1999@gmail.com"
+git config --global --list - to list the user name and email
+
+git commit -m "any comment" - to commit or add all files from staging area to local repo
+git commit -m "any comment" fn1 fn2  -  to add specified file
+git commit -a -m "updated file" - to update the existing file - only for existing file or modified files
+
+git remote add "name of the origin(any name)" html link
+git remote -v - using this we can check which url is maped
+
+git pull (any name) master - if needed
+git push (any name) master
+---------------------------
+
+git log - gng to display all the commit ids what ever in git hub
+to come out press q
+git log -2 - gng to display the recent two commit ids
+git log --oneline - gng to display the commit ids in one line
+git show commit id - it will show full details
+
+git branch-mutable
+-----------
+git branch - to check the branch like master
+git branch -r - to check the local repo branches
+git branch -a - to check all the branches
+git branch branchname - to create the branch
+git branch -d branchname - to delete the branch
+git branch -m newbranchname - to rename the branch
+git checkout -b branchname - to create and switch to that branch
+git checkout newbranchname - to switch from one bn to other bn
+master>git merge development - wter in the develp branch it will be adding in master also
+git diff develop(branchname) - to check the difference b/w curret branch and develop branch
+
+git clean -n - would remove these files(to clean the files in the working area)
+git clean -n fn - to clean paticular file
+git clean -f - to remove files
+
+touch fn1 - to create file
+git reset - to get the files from staging area to working area
+git reset fn - to get paticular file from staging area to working area
+
+git revert commit id - updated and new files gng to delete it from u r lapi or from local repo
+git push (any name) master -f - updated and new files gng to delete it from u r remote repo
+git push (any name) --all - to push all the branches from local repo to remote repo
+git push ff :branchname - to delete the branch name in remote repo
+
+git tags-immutable
+-----------
+git tag (it is used to create the archive files in git)
+git tag tagname (eg:facebookv2.0) - to create the tag
+git tag -d tagname - to delete the tag
+git push fb tag tagname - to push to remote repo
+
+git stash - wter in the working area is gng to take it
+---------
+git stash list 
+git stash apply - gng to apply latest 
+git stash drop - gng to delete latest 
+git stash drop stash@{1} - to delete paticular stash
+git stash pop - gng to list the latest and drop the latest
+git stash save "dev branch" - it will save the file that we have changed
+
+git cherry-pick(is used - from one branch some portion of code  is integrated to another branch)
+---------
+git log command execute take that commit id ,switch to other branch to which branch u want to apply
+master>git cherry-pick CID - (commit id we have to take from other branch)
+
+git clone url eg: https:github - to move from remote repo to pc
+git pull fb branchname or git fetch fb master(it is gng fetch from remote repo to local repo) - we can take the updated code like this,if both are working on same 
+git merge branchname - to get code from local repo to working area
+git pull = git fetch + git merge
+
+SSH keys
+--------
+
+ssh-keygen - open git bash and type this command to generate the ssh keys 
+id_rsa -->private key
+id_rsa(default encription algorithem).pub -->public key
+
+ssh-keygen -t(type of algorithem) dsa(specify any algorithm name) - it is gng to generate in user home directory(laptop) - ~/.(hidden file)ssh
+id_dsa
+id_dsa.pub
+
+ls -la ~/.ssh - to list files
+rm -f ~/.ssh/id_* - to remove the keys like statring with id_ and ending with any*
+cat ~/.ssh/id_rsa.pub - to see content in that file and it will show the ssh key
+
+ssh -T git@githyb.com
+git remote add sshurl git@github.com(url from github ssh)
+
+PR(pull request) - if we want to pull code from one branch to other branch in remote repo,then we create the pull request
+-----------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
